@@ -1,0 +1,349 @@
+[
+  {
+      "model": "movies.director",
+      "pk": 1,
+      "fields": {
+          "name": "이용주",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201110%2F20111012171735324.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 2,
+      "fields": {
+          "name": "이준익",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F149%2F202105141655366831.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 3,
+      "fields": {
+          "name": "박정배",
+          "main_image": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000001001%2FPM100148_133613_000.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 4,
+      "fields": {
+          "name": "김현석",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201009%2F20100927175058334.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 5,
+      "fields": {
+          "name": "황동혁",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201405%2F20140519135732154-1452590.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 6,
+      "fields": {
+          "name": "추창민",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F159%2F201111141413524291.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 7,
+      "fields": {
+          "name": "최성현",
+          "main_image": "https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000003465%2FPM346590_165513_000.png&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 8,
+      "fields": {
+          "name": "우민호",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F175%2F202011121052072361.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 9,
+      "fields": {
+          "name": "이장훈",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F55%2F201908221801349241.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 10,
+      "fields": {
+          "name": "이일형",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202108%2F20210811193454795.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 11,
+      "fields": {
+          "name": "류승완",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F103%2F201507201627433271.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 12,
+      "fields": {
+          "name": "장유정",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201703%2F2017033022594076.png&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 13,
+      "fields": {
+          "name": "연상호",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202007%2F20200726125800311.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 14,
+      "fields": {
+          "name": "김지운",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F80%2F201611041816343891.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 15,
+      "fields": {
+          "name": "임순례",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201008%2F20100802160638142-4065621.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 16,
+      "fields": {
+          "name": "장준환",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F86%2F201403281617333921.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 17,
+      "fields": {
+          "name": "박찬욱",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F30%2F201405092025014301.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 18,
+      "fields": {
+          "name": "조성희",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F74%2F201209061840575121.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 20,
+      "fields": {
+          "name": "장재현",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201901%2F20190124020915233-1190821.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 21,
+      "fields": {
+          "name": "김태균",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F20%2F201403101730394561.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 22,
+      "fields": {
+          "name": "최동훈",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F118%2F201507131340578791.gif&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 23,
+      "fields": {
+          "name": "한준희",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202110%2F20211026221731188.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 25,
+      "fields": {
+          "name": "최국희",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202008%2F20200810180357154.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 26,
+      "fields": {
+          "name": "정지우",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F64%2F201604111525301251.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 28,
+      "fields": {
+          "name": "봉준호",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F189%2F201710111116464471.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 29,
+      "fields": {
+          "name": "장훈",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F132%2F201606081541083361.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 30,
+      "fields": {
+          "name": "임찬상",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F35%2F201409291005383221.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 32,
+      "fields": {
+          "name": "김광식",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F78%2F201709111112509901.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 33,
+      "fields": {
+          "name": "유하",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F94%2F201205111122504931.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 36,
+      "fields": {
+          "name": "강윤성",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201706%2F2017063015225048.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 37,
+      "fields": {
+          "name": "김용화",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201803%2F2018030821300648-4393927.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 38,
+      "fields": {
+          "name": "김성수",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201311%2F20131118115820901-1644449.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 39,
+      "fields": {
+          "name": "윤제균",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F82%2F201412081757129731.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 40,
+      "fields": {
+          "name": "한동욱",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F173%2F2014010220594771.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 41,
+      "fields": {
+          "name": "박훈정",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F113%2F201807051646417381.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 42,
+      "fields": {
+          "name": "윤종빈",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F78%2F201801221405491981.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 43,
+      "fields": {
+          "name": "김한민",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F89%2F20171124155034751.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 44,
+      "fields": {
+          "name": "이병헌",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201510%2F20151020055601136-8083826.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 45,
+      "fields": {
+          "name": "이환경",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F185%2F201108241241308321.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 47,
+      "fields": {
+          "name": "한재림",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F202111%2F20211117163010656.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 52,
+      "fields": {
+          "name": "김주환",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F13%2F20190717154352881.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 53,
+      "fields": {
+          "name": "이상근",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F192%2F201907311413475171.jpg&type=u120_150&quality=95"
+      }
+  },
+  {
+      "model": "movies.director",
+      "pk": 54,
+      "fields": {
+          "name": "권수경",
+          "main_image": "https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2Fportrait%2F201702%2F2017021413362511.jpg&type=u120_150&quality=95"
+      }
+  }
+  
+  
+  ]
+  
