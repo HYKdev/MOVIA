@@ -7,11 +7,11 @@
           <hr />
           <div class="review">
             <h2>작성한 글</h2>
-            <span v-for="review in profile.reviews" :key="review.id">
+            <!-- <span v-for="review in profile.reviews" :key="review.id">
               <router-link :to="{ name: 'review', params: { reviewPk: review.id } }">
                 {{ review.title }} 은(는) {{ review.content }} 배우다
               </router-link>
-            </span>
+            </span> -->
           </div>
           <hr />
           <div class="likeMovie">
