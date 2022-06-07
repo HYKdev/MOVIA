@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Review Detail</h1>
+    {{ review }}
   </div>
 </template>
 
