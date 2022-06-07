@@ -1,7 +1,13 @@
 <template>
   <div>
     <h1>Review Detail</h1>
-    {{ review }}
+    <h2>{{ review.title }}</h2>
+    <p>{{ review.content }}</p>
+    <div v-if="isAuthor">
+      <router-link :to="{ name: 'reviewedit', params: { reviewPk } }">
+        <button>Edit</button>
+      </router-link>
+    </div>
   </div>
 </template>
 

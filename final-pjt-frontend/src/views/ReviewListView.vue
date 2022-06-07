@@ -1,8 +1,18 @@
 <template>
   <div>
     <h1>ReviewList</h1>
-    <button><router-link :to="{ name: 'reviewnew' }">게시글 작성하기</router-link></button>
-    {{ reviews }}
+    <router-link :to="{ name: 'reviewnew' }">
+      <button>게시글 작성하기</button>
+    </router-link>
+    <ul>
+      <li v-for="review in reviews" :key="review.pk">
+        {{ review.user.username}}
+        <router-link :to="{ name: 'reviewdetail', params: { reviewPk: review.id } }">
+          {{ review.title }} 는
+          {{ review.content }} 이다.
+        </router-link>
+      </li>
+    </ul>
   </div>  
 </template>
 

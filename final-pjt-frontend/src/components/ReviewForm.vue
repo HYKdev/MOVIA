@@ -33,10 +33,16 @@ export default {
   },
 
   methods: {
-    ...mapActions(['createReview']),
+    ...mapActions(['createReview', 'updateReview']),
     onSubmit() {
       if (this.action === 'create') {
         this.createReview(this.newReview)
+      } else if (this.action === 'update') {
+        const payload = {
+          pk: this.review.id,
+          ...this.newReview,
+        }
+        this.updateReview(payload)
       }
     }
   }

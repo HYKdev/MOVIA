@@ -82,5 +82,27 @@ export default {
           })
         })
     },
+
+    updateReview({ commit, getters }, { pk, title, content }) {
+      /* 리뷰 수정
+      PUT: review URL (리뷰 입력정보, token)
+      성공 -> 응답으로 받은 게시글 state.review에 저장 
+              ReviewDetailView 로 이동
+      실패 -> 에러 메시지 표시
+      */
+      axios({
+        url: drf.community.review(pk),
+        method: 'put',
+        data: { title, content },
+        headers: getters.authHeader,
+      })
+        .then(res => {
+          commit('SET_REVIEW', res.data)
+          router.push({
+            name: 'reviewdetail',
+            params: { reviewPk: getters.review.id }
+          })
+        })
+    }
   },
 }
