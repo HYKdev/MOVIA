@@ -25,6 +25,7 @@
         </tbody>
       </table>
     </div>
+    
   </div>
 </template>
 
@@ -53,4 +54,8 @@ export default {
     border: none;
     border-radius: 4px;
   }
+ .bigTable {
+   display: flex;
+   justify-content: center;
+ }
 </style>
