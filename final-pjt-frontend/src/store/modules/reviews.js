@@ -103,28 +103,6 @@ export default {
             params: { reviewPk: getters.review.id }
           })
         })
-    },
-
-    deleteReview({ commit, getters }, reviewPk) {
-      /* 리뷰 삭제 
-      사용자가 확인을 받고 
-      DELETE: review URL (token)
-      성공 -> state.review 비우기
-              ReviewListView로 이동
-      실패 -> 에러 메시지 표시
-      */
-      if (confirm('정말 삭제하시겠습니까?')) {
-        axios({
-          url: drf.community.review(reviewPk),
-          method: 'delete',
-          headers: getters.authHeader,
-        })
-          .then(() => {
-            commit('SET_REVIEW', {})
-            router.push({ name: 'reviewlist'})
-          })
-          .catch(err => console.log(err.response))
-      }
     }
     
   },
