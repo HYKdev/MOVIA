@@ -7,7 +7,6 @@
       <router-link :to="{ name: 'reviewedit', params: { reviewPk } }">
         <button>Edit</button>
       </router-link>
-      <button @click="deleteReview(reviewPk)">Delete</button>
     </div>
   </div>
 </template>
@@ -26,7 +25,7 @@ export default {
     ...mapGetters(['isAuthor', 'review'])
   },
   methods: {
-    ...mapActions(['fetchReview', 'deleteReview'])
+    ...mapActions(['fetchReview'])
   },
   created () {
     this.fetchReview(this.reviewPk)
