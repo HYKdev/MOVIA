@@ -29,13 +29,25 @@
       </div>
     </div>
 
-  
-
-
+    <div class="wordcloud">
+      <vue-word-cloud 
+        style="
+        height: 480px;
+        width: 640px;
+        "
+        :words="actorwordcloud"
+        :color="([, weight]) => weight > 10 ? 'DeepPink' : weight > 5 ? 'RoyalBlue' : 'Indigo'"
+        font-family="Roboto"
+      />
+    </div>
+    <div>
+      
+    </div>
   </div>
 </template>
 
 <script>
+import VueWordCloud from 'vuewordcloud';
 import { mapActions, mapGetters } from 'vuex';
 
 export default {
@@ -46,17 +58,21 @@ export default {
       xOffset: this.xOffset,
     };
   },
+  components: {
+    [VueWordCloud.name]: VueWordCloud,
+  },
   computed: {
-    ...mapGetters(['actor']),
+    ...mapGetters(['actor', 'actorwordcloud']),
     likeCount() {
       return this.actor.like_users?.length;
     },
   },
   methods: {
-    ...mapActions(['fetchActor', 'likeActor']),
+    ...mapActions(['fetchActor', 'likeActor', 'fetchWordCloud']),
   },
   created() {
     this.fetchActor(this.actorPk);
+    this.fetchWordCloud(this.actorPk);
   },
   mounted() {
     let xOffset = 0;
@@ -117,5 +133,9 @@ img {
   font-size: 25px;
   font-weight: 800;
   text-align: center;
+}
+.wordcloud {
+  display: flex;
+  justify-content: center;
 }
 </style>

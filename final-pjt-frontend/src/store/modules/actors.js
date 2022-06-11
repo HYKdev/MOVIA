@@ -7,18 +7,21 @@ export default {
     actors: [],
     actor: [],
     homes: [],
+    actorwordcloud: [],
   },
 
   getters: {
     actors: (state) => state.actors,
     actor: (state) => state.actor,
     homes: (state) => state.homes,
+    actorwordcloud: (state) => state.actorwordcloud,
   },
 
   mutations: {
     SET_ACTORS: (state, actors) => (state.actors = actors),
     SET_ACTOR: (state, actor) => (state.actor = actor),
     SET_HOMES: (state, homes) => (state.homes = homes),
+    SET_ACTORWORDCLOUD: (state, actorwordcloud) => (state.actorwordcloud = actorwordcloud),
   },
 
   actions: {
@@ -86,6 +89,27 @@ export default {
       })
         .then((res) => commit('SET_ACTOR', res.data))
         .catch((err) => console.error(err.response));
+    },
+
+    fetchWordCloud({ commit, getters }, actorPk) {
+      /* 단일 배우 받기
+    GET:  movies URL? 
+    성공 -> 받은 배우  state.actor에 저장
+    실패 -> 단순 에러: 에러 메세지 표시
+            404 에러: NotFound404로 이동
+    */
+      axios({
+        url: drf.movies.actorWordCloud(actorPk),
+        method: 'get',
+        headers: getters.authHeader,
+      })
+        .then((res) => commit('SET_ACTORWORDCLOUD', res.data))
+        .catch((err) => {
+          console.error(err.response);
+          if (err.response.status === 404) {
+            router.push({ name: 'NotFound404' });
+          }
+        });
     },
   },
 };
