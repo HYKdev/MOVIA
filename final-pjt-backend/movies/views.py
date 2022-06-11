@@ -9,6 +9,8 @@ from rest_framework.response import Response
 from .models import Actor, Movie
 from .serializers.movie import MovieListSerializer, MovieSerializer
 from .serializers.actor import ActorListSerializer, ActorSerializer
+from community.models import Review
+from community.serializers import review
 from pprint import pprint
 import random
 # Create your views here.
@@ -54,6 +56,33 @@ def actor_detail(request, actor_pk):
         actor = get_object_or_404(Actor,pk=actor_pk)
         serializer = ActorSerializer(actor)
         return Response(serializer.data)
+
+@api_view(['GET'])
+def actor_detail_wordcloud(reqeust, actor_pk):
+    if reqeust.method == 'GET':
+        actor = get_object_or_404(Actor, pk=actor_pk)
+        serializer = ActorSerializer(actor)
+        actor_name = serializer.data['name']
+        reviews = Review.objects.filter(title = actor_name)
+        serializer = review.ReviewListSerializer(reviews, many=True)
+        n = len(serializer.data)
+        
+        data = []
+        wordcloud_data = []
+        wordcloud_data_count= []
+        
+        for i in range(n):
+            word = serializer.data[i]['content']
+            data.append(word)
+            if word not in wordcloud_data:
+                wordcloud_data.append(word)
+        
+        for word_data in wordcloud_data:
+            wordcloud_data_count.append(data.count(word_data))
+
+        wordcloud = list(zip(wordcloud_data, wordcloud_data_count))
+        
+        return Response(wordcloud)
 
 @api_view(['POST'])
 def like_movie(request, movie_pk):
