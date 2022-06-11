@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Edit Review</h1>
     <review-form v-if="isReview" :review="review" action="update"></review-form>
   </div>
 </template>
