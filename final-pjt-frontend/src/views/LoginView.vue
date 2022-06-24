@@ -1,37 +1,34 @@
 <template>
-  <div class="background">
-    <br />
-    <br />
-    <br />
-    <div class="container d-flex justify-content-center">
-      <div class="loginform">
-        <h1>Login</h1>
-
+  <div class="container">
+    <div class="card">
+      <div class="logoBox">
+        <img src="@/assets/movia_onlyText.png" alt="moviaLogo">
+      </div>
+      <div class="loginForm">
         <account-error-list v-if="authError"></account-error-list>
-
         <form @submit.prevent="login(credentials)">
-          <div class="form-outline mb-4">
+          <div class="username">
             <label for="username"></label>
             <input v-model="credentials.username" type="text" id="username" placeholder="Username" required />
           </div>
 
-          <div class="form-outline mb-4">
+          <div class="password">
             <label for="password"></label>
             <input v-model="credentials.password" type="password" id="password" placeholder="Password" required />
           </div>
 
           <!-- Submit button -->
-          <button type="submit" class="loginBtn btn btn-primary btn-block mb-4">Login</button>
+          <button type="submit" class="loginBtn">Login</button>
         </form>
-        <hr />
-
+        
         <!-- Register buttons -->
-        <div class="text-center">
-          <a href="#!">Forgot password?</a>
-          <p>Don't havea an account? <router-link :to="{ name: 'signup' }"> Sign up </router-link></p>
-          <p>or Signup/Login with:</p>
+        <div class="register">
+          <p class="signup">Don't have an account? <router-link :to="{ name: 'signup' }"> Sign up </router-link></p>
+          <p class="otherLogin">or Signup/Login with:</p>
           <a href="">
-            <img class="naverBtn" src="../assets/btnG_short.png" alt="" />
+            <div class="naverLogin">
+              <img class="naverBtn" src="../assets/btnG_short.png" alt="" />
+            </div>
           </a>
         </div>
       </div>
@@ -67,49 +64,96 @@ export default {
 
 <style scoped>
 .container {
-  width: 550px;
-  padding: 50px;
-  border: 1px solid black;
-  border-radius: 5%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+.container .card {
+  width: 450px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
 }
 
-.loginform {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.container .card .logoBox {
+  width: 450px;
+  height: 250px;
+  background: black;
+  border-radius: 20px 20px 0 0;
 }
 
-h1 {
-  color: black;
-  font-size: 35px;
-  font-weight: 500px;
-  margin-bottom: 40px;
+.container .card .logoBox img {
+  width: 400px;
+  position: absolute;
+  top: 70px;
+  left: 25px;
+}
+
+.container .card .loginForm {
+  padding: 20px;
+}
+
+.container .card .loginForm form input {
+  width: 350px;
+  height: 35px;
+  border: 1px solid #ced4da;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.container .card .loginForm form .loginBtn {
+  width: 350px;
+  height: 35px;
+  background-color: #f3d42a;
+  border: none;
+  border-radius: 7px;
+  margin: 10px 10px 20px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color .15s ease-in-out;
+}
+
+.container .card .loginForm form .loginBtn:hover {
+    background-color: rgba(232, 201, 48, 1)
+  }
+
+.container .card .loginForm .register {
+  margin: 15px 0 0 0;
+  font-weight: 500;
+}
+
+.container .card .loginForm .register .signup {
+  margin-bottom: 0px;
   text-align: center;
 }
 
-.form-outline input {
-  width: 100%;
-  height: 40px;
-  padding: 20px;
-  border-radius: 15px;
-  border: none;
-  border: 1px solid rgba(74, 74, 74, 0.5);
-}
-
-.loginBtn {
-  border-radius: 15px;
-}
-
-.naverBtn {
-  width: 100px;
-}
-
-hr {
-  height: 2px;
+.container .card .loginForm .register .signup a {
+  /* text-decoration: none; */
   color: black;
+  font-weight: 500;
 }
-/* .background {
-  background-color: white;
-  height: 100vh;
-} */
+
+.container .card .loginForm .register .otherLogin {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.container .card .loginForm .register a .naverLogin {
+  text-align: center;
+}
+
+.container .card .loginForm .register a .naverLogin .naverBtn {
+  width: 100px;
+  margin: 10px;
+}
 </style>
