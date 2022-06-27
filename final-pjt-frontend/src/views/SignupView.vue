@@ -15,12 +15,12 @@
 
           <div class="password">
             <label for="password"></label>
-            <input v-model="credentials.password" type="password" id="password" placeholder="Password" required />
+            <input v-model="credentials.password1" type="password" id="password1" placeholder="Password" required />
           </div>
 
           <div class="password2">
             <label for="password2"></label>
-            <input type="password" id="password2" placeholder="Password Confirmation" required />
+            <input v-model="credentials.password2" type="password" id="password2" placeholder="Password Confirmation" required />
           </div>
 
           <!-- Submit button -->
