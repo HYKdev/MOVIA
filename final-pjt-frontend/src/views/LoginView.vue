@@ -90,10 +90,10 @@ export default {
 }
 
 .container .card .logoBox img {
-  width: 400px;
+  width: 340px;
   position: absolute;
-  top: 70px;
-  left: 25px;
+  top: 75px;
+  left: 45px;
 }
 
 .container .card .loginForm {
