@@ -5,7 +5,7 @@
         <img src="@/assets/movia_onlyText.png" alt="moviaLogo">
       </div>
       <div class="loginForm">
-        <account-error-list v-if="authError"></account-error-list>
+        <!-- <account-error-list v-if="authError"></account-error-list> -->
         <form @submit.prevent="login(credentials)">
           <div class="username">
             <label for="username"></label>
@@ -15,6 +15,13 @@
           <div class="password">
             <label for="password"></label>
             <input v-model="credentials.password" type="password" id="password" placeholder="Password" required />
+            <div v-if="authError">
+              <div v-if="authError.non_field_errors">
+                <span v-for="error in authError.non_field_errors" :key="error.id">
+                  <p class="error">아이디 또는 비밀번호를 잘못 입력 하셨습니다. <br>입력하신 내용을 다시 확인해주세요.</p>
+                </span>
+              </div>
+            </div>
           </div>
 
           <!-- Submit button -->
@@ -22,15 +29,7 @@
         </form>
         
         <!-- Register buttons -->
-        <div class="register">
-          <p class="signup">Don't have an account? <router-link :to="{ name: 'signup' }"> Sign up </router-link></p>
-          <p class="otherLogin">or Signup/Login with:</p>
-          <a href="">
-            <div class="naverLogin">
-              <img class="naverBtn" src="../assets/btnG_short.png" alt="" />
-            </div>
-          </a>
-        </div>
+        <p class="signup">Don't have an account? <router-link :to="{ name: 'signup' }"> Sign up </router-link></p>        
       </div>
     </div>
   </div>
@@ -38,13 +37,9 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
-import AccountErrorList from '@/components/AccountErrorList.vue';
 
 export default {
   name: 'LoginView',
-  components: {
-    AccountErrorList,
-  },
   data() {
     return {
       credentials: {
@@ -64,7 +59,6 @@ export default {
 
 <style scoped>
 .container {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,37 +66,37 @@ export default {
   }
 
 .container .card {
-  width: 450px;
+  width: 500px;
   height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
 }
 
 .container .card .logoBox {
-  width: 450px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   background: black;
   border-radius: 20px 20px 0 0;
+  text-align: center;
+  line-height: 300px;
 }
 
 .container .card .logoBox img {
-  width: 340px;
-  position: absolute;
-  top: 75px;
-  left: 45px;
+  width: 100%;
+  vertical-align: middle;
 }
 
 .container .card .loginForm {
-  padding: 20px;
+  padding: 40px;
 }
 
 .container .card .loginForm form input {
-  width: 350px;
-  height: 35px;
+  width: 400px;
+  height: 40px;
   border: 1px solid #ced4da;
   border-radius: 7px;
   padding: 10px;
@@ -110,8 +104,8 @@ export default {
 }
 
 .container .card .loginForm form .loginBtn {
-  width: 350px;
-  height: 35px;
+  width: 400px;
+  height: 40px;
   background-color: #f3d42a;
   border: none;
   border-radius: 7px;
@@ -127,33 +121,30 @@ export default {
     background-color: rgba(232, 201, 48, 1)
   }
 
+.error {
+  color: red;
+  font-size: 15px;
+  margin: 0 0 10px 12px;
+}
 .container .card .loginForm .register {
   margin: 15px 0 0 0;
   font-weight: 500;
 }
 
-.container .card .loginForm .register .signup {
+.container .card .loginForm .signup {
   margin-bottom: 0px;
   text-align: center;
 }
 
-.container .card .loginForm .register .signup a {
-  /* text-decoration: none; */
+.container .card .loginForm .signup a {
   color: black;
   font-weight: 500;
+  font-size: 20px;
 }
 
-.container .card .loginForm .register .otherLogin {
-  margin-bottom: 0px;
-  text-align: center;
-}
-
-.container .card .loginForm .register a .naverLogin {
-  text-align: center;
-}
-
-.container .card .loginForm .register a .naverLogin .naverBtn {
-  width: 100px;
-  margin: 10px;
+@media  screen and (max-width:480px) {
+  .container .card {
+    min-width: 435px;
+  }
 }
 </style>
