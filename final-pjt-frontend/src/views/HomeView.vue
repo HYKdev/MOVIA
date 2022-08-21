@@ -64,11 +64,10 @@ export default {
 h1 {
   margin: 10px 10px;
   text-align: center;
-  font-size: 38px;
-  font-weight: 800;
+  font-size: 28px;
 }
 .actorName {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
 }
 </style>

@@ -69,22 +69,22 @@ const routes = [
     component: ActorDetailView,
   },
   {
-    path: '/reviews',
+    path: '/community',
     name: 'reviewlist',
     component: ReviewListView,
   },
   {
-    path: '/reviews/new',
-    name: 'reviewnew',
-    component: ReviewNewView,
-  },
-  {
-    path: '/reviews/:reviewPk',
+    path: '/community/:reviewPk',
     name: 'reviewdetail',
     component: ReviewDetailView,
   },
   {
-    path: '/reviews/:reviewPk/edit',
+    path: '/community/new',
+    name: 'reviewnew',
+    component: ReviewNewView,
+  },
+  {
+    path: '/community/:reviewPk/edit',
     name: 'reviewedit',
     component: ReviewEditView,
   },

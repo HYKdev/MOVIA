@@ -23,6 +23,7 @@ export default {
     likeMovie: (moviePk) => HOST + MOVIES + `${moviePk}/` + 'movielike/',
     actors: () => HOST + MOVIES + 'actorlist/',
     actor: (actorPk) => HOST + MOVIES + 'actordetail/' + `${actorPk}/`,
+    actorWordCloud: (actorPk) => HOST + MOVIES + 'actordetail/' + `${actorPk}/` + 'wordcloud/',
     likeActor: (actorPk) => HOST + MOVIES + `${actorPk}/` + 'actorlike/',
   },
   community: {
