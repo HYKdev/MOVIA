@@ -1,6 +1,5 @@
 #  MOVIA
 
-[TOC]
 
 </br>
 
